@@ -1,18 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-     <title>Floating Assignment - YOUR TITLE HERE</title>
-  </head>
-  <body>
-    <h1>Floating Assignment - Cheat Sheet<h1>
-      <p>This is a (very ugly) placeholder page for your WMC cheat sheet.
-        You can use it in any way suitable to fulfil your task.</p>
-      <ul>
-        This includes:
-        <li>Modify this file as needed</li>
-        <li>Replace the content of this file with your cheat sheet</li>
-        <li>Use it as overview page that links to separate pages for each topic</li>
-        <li>Add a menu bar</li>
-      </ul>
-  </body>
+    <head>
+        <meta http-equiv="Content-Type"
+        content = "text/html; charset = UTF-8"/>
+        <title>CheatCheat</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+    
+    <body>
+        <h1>CheatSheet</h1>
+            <h3>HTML, CSS, Assignment1, 2</h3>
+        <h2>HTML</h2>
+            <h3>1 . Basics of html</h3>
+                <p>HTML=Hyper Text Markup Language</p>
+                <p><b>1.DOCTYPE</b>>All html docs start with this.its an declaration for the broweser what to expect</p>
+                <p><b>2.html element</b>container for all other HTML elements</p>
+                <p><b>3.head element</b>contains data bout data(metadata), is not shown</p>
+                    <p><b>'<'title> element</b> defines title(in browser tab)</p>
+                    <p><b>'<'meta> element</b>  defines a characterset, page description, keywords, author of the document, and viewport settings </p>
+                    <p>Charset:                 '<'meta charset="UTF-8"></p>
+                <p><b>4.body element</b>        contains all the dataand most elements inside the document</p>
+            <h3>2.Html elements</h3>
+                <p><b>1.Elements general</b>    '<'tagname>Content goes here...'<'/tagname></p>
+                <p><b>2. p element</b>          normal paragraph (browser ignores spaces)</p>
+                <p><b>2.em element</b>          stuff inside em are written kursive</p>
+                <p><b>3.b element</b>           makes text bold, fat</p>
+                <p><b>4.h element headers</b>   headings from h1-h6</p>
+                <p><b>5.Comments</b>'<'!-- This is a comment --> comments will not be shown in the website</p><!-- This is a comment -->
+                <p><b>6.Atributes</b>atributes provide extra info about an element, like parameters</p>
+                <p><b>7.Links(hyperlinks) </b>'<'a href="url">link text'<'/a></p>
+                <p>inside the a tag use the href atribute for link destination</p>
+                <a href="https://www.w3schools.com/">BSP</a>
+                <p><b>8.Images</b> use '<'img> to add</p>
+                <p>atributes are required and some optional</p>
+                <p>src(required): the url of an image</p>
+                <p>alt: the text displayed when image not shown</p>
+                <p>width/height: how big the picture is(this is distortetd)</p>
+                <img src="https://wallpaperaccess.com/full/5213860.jpg"style="width:100px;height:120px;">
+        <h2>Css</h2>
+            <h3>Basics of Css</h3>
+                <p>Css=cascading style sheets</p>
+                <p>css is used to make a website prettier!</p>
+                <p><b>add css:</b> write in head:'<'link rel="stylesheet" href="style.css"></p>
+                <p><b>1.Syntax:</b>selector(tagname){property(what) : value;}</p>
+                <p><b>2.Selectors</b>Selectors find elements you want to style</p>
+                <p>there are different types of selectors:</p>
+                <p>Simple zbsp: p</p>
+                <p>Id selector: #para1(element with id para1)</p>
+                <p>class selector: .center(al elements in class center)</p>
+                <p>name+class: p.center(elements of p in class center)</p>
+                <p>universal: * (all html tags)</p>
+                <p>grouped:p,h1,h2(edits all 3 elements)</p>
+                <p><b>3.Comments</b> '/*comment*/</p>
+                <p><b>4.Colors</b></p>
+                <p>css suporrts 140 standart color names,hex,hsl,rgba and hsla</p>
+                <p><b>5.Backgrounds</b>one color, image </p>
+                <p>1Farbe: in das body element :"background-color: xy;"</p>
+                <p>Picture:in body :"background-image: url("xy.png");"</p>
+                <p>Picture repeat:"background-repeat: repeat-x(,-y);"</p>
+                <p>Picture fixed:(scollable)"  background-position: right top;background-attachment: scroll(,fixed,justify);"</p>
+                <p><b>6.Text</b> Formating text</p>
+                <p>Change color via selector:"color: blue;", also text backgroundcolor</p>
+                <p>Alignment(left,center,right):"text-align: center;"</p>
+                <p>Decoration Line:"text-decoration-line:" underline";"(,overline,line through)</p>
+                <p>Decoration line color"text-decoration-color:blue;"</p>
+                <p>Decoration line style:"text-decoration-style: dotted;"</p>
+                <p>Decoration Line thikness:"text-decoration-thickness: 5px;(,25%)"</p>
+                <p>Text transfermation:" text-transform: lowercase;"(uppercase, capitalize)</p>
+                
+                <p><b>7.Fonts</b>Family,style,size,weight,</p>
+                <p>in css we have 5 font familys:</p>
+                <p>serif: have a stroke on the end of lines</p>
+                <p>sans serif: straight lines</p>
+                <p>monospace: brauchen für jeden buchstaben gleich viel platz</p>
+                <p>cursive: hand writing</p>
+                <p>fantasy: decorative,playful fonts</p>
+                <p>Font styles:normal,italic,oblique "font-style: italic;"</p>
+                <p>all letters uppercase but lowercase letters smaller"font-variant: small-caps;"</p>
+                <p>Font size: "font-size: 40px;","font-size: 100%;"</p>
+                <p>em:"font-size: 2.5em; /* 40px/16=2.5em */"</p>
+                <p>Font weight:how thicc the text is "font-weight: normal","font-weight: bold;","font-weight: 900;"</p>
+                
+                <p><b>8.Links</b> a{...}</p>
+                <p>a:link{} - a normal, unvisited link</p>
+                <p>a:visited{} - a link the user has visited</p>
+                <p>a:hover{} - a link when the user mouses over it</p>
+                <p>a:active{} - a link the moment it is clicked</p>
+                <p><b>9.Combinators</b>between simple selectors</p>
+                <p>descendant selector (space):</p>
+                <p>child selector (>):</p>
+                <p>adjacent sibling selector (+):</p>
+                <p>general sibling selector (~):</p>
+                <p><b>10.Pseudo Classes</b> special state of an element</p>
+                <p>"a:hover {}","div:hover {}"</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1>Assignment 01</h1>
+            <h3>world wide web general</h3>
+                <p>its an application to accsess public webpages on the internet</p>
+                <p><b>1. what is the most essential for te wirld wide web?</b>  htpp,html,url and browsers</p>
+                <p><b>2.How are resources adressed in the web</b>   via an URL(uniform recuace locator)</p>
+                <p><b>3.What are the general components of a url?</b>   the scheme(https), subdomain(shop.), top-level domain(.com), second-level domain(example.), and subdirectory(account)</p>
+                <p>together that makes https://shop.example/account.com</p>
+            <h3>Web server</h3>
+                <p><b>1.what is a web server</b>    a server that responds to clients request of html content</p>
+                <p><b>2. what does a web server</b>     it accepts requestst and responds with data or an error</p>
+                <p><b>3. How can content be stored on a web server?</b>     in a file sytem simmilar to your pc, on servers</p>
+                <p><b>4. How is content in webpages described?</b>  with html 'code', css files and js or ts</p>
+            <h3>Web Client</h3>
+                <p><b>1.What is a web client?</b>   Its a browser/application to accses the web</p>
+                <p><b>2.What does a web client?</b>     it conects the user to the web and requestw content from webservers and loads it</p>
+                <p><b>3.Web Client and Web Browser is the same</b>      basicly yes</p>
+            <h3>hello world</h3>
+                <p><b>1.What is the html head element?</b>      contains the metadata</p>
+                <p><b>2.What does !DOCTYPE html mean?</b>   all html code start with this decleration</p>
+                <p><b>3.What are the two top most elements within the html element?</b>     head and body</p>
+                <p><b>4.How to emphasize a text and how is it displayed in the browser?</b>     with "<em>em in square brackets</em></p>
+                <p><b>5.How to mark up important ext and how is it displayed in the browser?</b>    eather with <strong>strong</strong>or <b>b</b> in square brackets</p>
+        <h1>Assignment2 02</h1>
+            <p><b>01</b>Der selektror dann{} und dazwischen deklarationen</p>
+            <p><b>02</b>direkt child :>, Descendant is normal, adjacent sibling:+,Sibling:~</p>
+            <p><b>03</b>light pink &#FFB6C1, Navy&#000080, MeadiumSeaGreen&#3CB371, Fuchsia&#FF00FF</p>   
+            <p><b>04</b>color:hotpink;background-color:lightpink;</p>
+            <p><b>05</b>link,visited,hover,active</p>
+            <p><b>06</b>background-image: url("xy.png");</p> 
+            <p><b>07</b>text-align: center;</p>
+            <p><b>08</b>text-decoration-line:" underline";</p>
+            <p><b>09</b>text-transform: lowercase;</p>
+            <p><b>10</b>Sans serif has straight lines and serif has strokes on the end of lines</p>
+            <p><b>11</b>"font-family: "Lucida Console", "Courier New", monospace;"," font-family: Arial, Helvetica, sans-serif;"</p>
+            <p><b>12</b>"font-style: normal;"," font-style: italic;"</p>
+            <p><b>13</b>"font-size: 40px;","font-size: 0.875em;","font-size: 80%;"</p>
+            <p><b>14</b>"font-weight: normal;","font-weight: 900;"</p>
+    </body>
 </html>
