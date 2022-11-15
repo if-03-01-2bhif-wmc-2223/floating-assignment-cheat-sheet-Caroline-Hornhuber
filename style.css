@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(255, 219, 237);
+}
+p {
+    color: hotpink;
+    font-size: 20px;
+    font-family: UWU3;
+}
+h1{
+    color: hotpink;
+    font-family:UWU;
+    text-align: center;
+    font-size: 55px;
+    text-decoration-line:" underline";
+}/*Cheatsheet*/
+h2{
+    color: rgb(255, 133, 194);
+    text-align: center;
+    font-family: "Sofia",sans-serif;
+    font-size: 40px;
+    background-color: rgb(255, 231, 243);
+}/*Big header*/
+h3{
+    color: rgb(255, 171, 213);
+    font-family: UWU2;
+    font-size: 40px;
+    background-color: rgb(255, 212, 234);
+}/*medium header*/
+@font-face {
+    font-family: UWU;
+    src: url(HashedBrowns-WyJgn.ttf);
+  }
+  @font-face {
+    font-family: UWU2;
+    src: url(ChumpChange-GD7O.ttf);
+  }
+  @font-face {
+    font-family: UWU3;
+    src: url(MadeleinaSans-2VY3.ttf);
+  }
